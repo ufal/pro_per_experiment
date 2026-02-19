@@ -1,29 +1,1092 @@
 meta-llama/Llama-3.1-8B
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a hedgehog
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	an octopus
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a whale
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a little duck
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a shark
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a turtle
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a seagull
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a hedgehog and an octopus
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a hedgehog and a whale
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a hedgehog and a little duck
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a hedgehog and a shark
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a hedgehog and a turtle
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a hedgehog and a seagull
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	an octopus and a whale
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	an octopus and a little duck
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	an octopus and a shark
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	an octopus and a turtle
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	an octopus and a seagull
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a whale and a little duck
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a whale and a shark
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a whale and a turtle
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a whale and a seagull
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a little duck and a shark
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a little duck and a turtle
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a little duck and a seagull
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a shark and a turtle
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a shark and a seagull
-Please write a poem on {var}.	Here is a poem on {var}, please rate the poem.	a turtle and a seagull
+User: Please write a poem about {var}.\n\nAssistant: Here is the poem for you:\n\n
+User: Here is a poem about {var}, please rate the poem.\n\n
+a hedgehog
+an octopus
+a whale
+a little duck
+a shark
+a turtle
+a seagull
+a fox
+a penguin
+a dragonfly
+a jellyfish
+a parrot
+a wolf
+a chameleon
+a flamingo
+an eagle
+a rabbit
+a platypus
+a llama
+a crocodile
+an aligator
+a meerkat
+a tardigrade
+an aardvark
+a capybara
+a panda
+an elephant
+an anteater
+a pangolin
+a honeybadger
+a raccoon
+a tiger
+a lion
+a hedgehog and an octopus
+an octopus and a hedgehog
+a hedgehog and a whale
+a whale and a hedgehog
+a hedgehog and a little duck
+a little duck and a hedgehog
+a hedgehog and a shark
+a shark and a hedgehog
+a hedgehog and a turtle
+a turtle and a hedgehog
+a hedgehog and a seagull
+a seagull and a hedgehog
+a hedgehog and a fox
+a fox and a hedgehog
+a hedgehog and a penguin
+a penguin and a hedgehog
+a hedgehog and a dragonfly
+a dragonfly and a hedgehog
+a hedgehog and a jellyfish
+a jellyfish and a hedgehog
+a hedgehog and a parrot
+a parrot and a hedgehog
+a hedgehog and a wolf
+a wolf and a hedgehog
+a hedgehog and a chameleon
+a chameleon and a hedgehog
+a hedgehog and a flamingo
+a flamingo and a hedgehog
+a hedgehog and an eagle
+an eagle and a hedgehog
+a hedgehog and a rabbit
+a rabbit and a hedgehog
+a hedgehog and a platypus
+a platypus and a hedgehog
+a hedgehog and a llama
+a llama and a hedgehog
+a hedgehog and a crocodile
+a crocodile and a hedgehog
+a hedgehog and an aligator
+an aligator and a hedgehog
+a hedgehog and a meerkat
+a meerkat and a hedgehog
+a hedgehog and a tardigrade
+a tardigrade and a hedgehog
+a hedgehog and an aardvark
+an aardvark and a hedgehog
+a hedgehog and a capybara
+a capybara and a hedgehog
+a hedgehog and a panda
+a panda and a hedgehog
+a hedgehog and an elephant
+an elephant and a hedgehog
+a hedgehog and an anteater
+an anteater and a hedgehog
+a hedgehog and a pangolin
+a pangolin and a hedgehog
+a hedgehog and a honeybadger
+a honeybadger and a hedgehog
+a hedgehog and a raccoon
+a raccoon and a hedgehog
+a hedgehog and a tiger
+a tiger and a hedgehog
+a hedgehog and a lion
+a lion and a hedgehog
+an octopus and a whale
+a whale and an octopus
+an octopus and a little duck
+a little duck and an octopus
+an octopus and a shark
+a shark and an octopus
+an octopus and a turtle
+a turtle and an octopus
+an octopus and a seagull
+a seagull and an octopus
+an octopus and a fox
+a fox and an octopus
+an octopus and a penguin
+a penguin and an octopus
+an octopus and a dragonfly
+a dragonfly and an octopus
+an octopus and a jellyfish
+a jellyfish and an octopus
+an octopus and a parrot
+a parrot and an octopus
+an octopus and a wolf
+a wolf and an octopus
+an octopus and a chameleon
+a chameleon and an octopus
+an octopus and a flamingo
+a flamingo and an octopus
+an octopus and an eagle
+an eagle and an octopus
+an octopus and a rabbit
+a rabbit and an octopus
+an octopus and a platypus
+a platypus and an octopus
+an octopus and a llama
+a llama and an octopus
+an octopus and a crocodile
+a crocodile and an octopus
+an octopus and an aligator
+an aligator and an octopus
+an octopus and a meerkat
+a meerkat and an octopus
+an octopus and a tardigrade
+a tardigrade and an octopus
+an octopus and an aardvark
+an aardvark and an octopus
+an octopus and a capybara
+a capybara and an octopus
+an octopus and a panda
+a panda and an octopus
+an octopus and an elephant
+an elephant and an octopus
+an octopus and an anteater
+an anteater and an octopus
+an octopus and a pangolin
+a pangolin and an octopus
+an octopus and a honeybadger
+a honeybadger and an octopus
+an octopus and a raccoon
+a raccoon and an octopus
+an octopus and a tiger
+a tiger and an octopus
+an octopus and a lion
+a lion and an octopus
+a whale and a little duck
+a little duck and a whale
+a whale and a shark
+a shark and a whale
+a whale and a turtle
+a turtle and a whale
+a whale and a seagull
+a seagull and a whale
+a whale and a fox
+a fox and a whale
+a whale and a penguin
+a penguin and a whale
+a whale and a dragonfly
+a dragonfly and a whale
+a whale and a jellyfish
+a jellyfish and a whale
+a whale and a parrot
+a parrot and a whale
+a whale and a wolf
+a wolf and a whale
+a whale and a chameleon
+a chameleon and a whale
+a whale and a flamingo
+a flamingo and a whale
+a whale and an eagle
+an eagle and a whale
+a whale and a rabbit
+a rabbit and a whale
+a whale and a platypus
+a platypus and a whale
+a whale and a llama
+a llama and a whale
+a whale and a crocodile
+a crocodile and a whale
+a whale and an aligator
+an aligator and a whale
+a whale and a meerkat
+a meerkat and a whale
+a whale and a tardigrade
+a tardigrade and a whale
+a whale and an aardvark
+an aardvark and a whale
+a whale and a capybara
+a capybara and a whale
+a whale and a panda
+a panda and a whale
+a whale and an elephant
+an elephant and a whale
+a whale and an anteater
+an anteater and a whale
+a whale and a pangolin
+a pangolin and a whale
+a whale and a honeybadger
+a honeybadger and a whale
+a whale and a raccoon
+a raccoon and a whale
+a whale and a tiger
+a tiger and a whale
+a whale and a lion
+a lion and a whale
+a little duck and a shark
+a shark and a little duck
+a little duck and a turtle
+a turtle and a little duck
+a little duck and a seagull
+a seagull and a little duck
+a little duck and a fox
+a fox and a little duck
+a little duck and a penguin
+a penguin and a little duck
+a little duck and a dragonfly
+a dragonfly and a little duck
+a little duck and a jellyfish
+a jellyfish and a little duck
+a little duck and a parrot
+a parrot and a little duck
+a little duck and a wolf
+a wolf and a little duck
+a little duck and a chameleon
+a chameleon and a little duck
+a little duck and a flamingo
+a flamingo and a little duck
+a little duck and an eagle
+an eagle and a little duck
+a little duck and a rabbit
+a rabbit and a little duck
+a little duck and a platypus
+a platypus and a little duck
+a little duck and a llama
+a llama and a little duck
+a little duck and a crocodile
+a crocodile and a little duck
+a little duck and an aligator
+an aligator and a little duck
+a little duck and a meerkat
+a meerkat and a little duck
+a little duck and a tardigrade
+a tardigrade and a little duck
+a little duck and an aardvark
+an aardvark and a little duck
+a little duck and a capybara
+a capybara and a little duck
+a little duck and a panda
+a panda and a little duck
+a little duck and an elephant
+an elephant and a little duck
+a little duck and an anteater
+an anteater and a little duck
+a little duck and a pangolin
+a pangolin and a little duck
+a little duck and a honeybadger
+a honeybadger and a little duck
+a little duck and a raccoon
+a raccoon and a little duck
+a little duck and a tiger
+a tiger and a little duck
+a little duck and a lion
+a lion and a little duck
+a shark and a turtle
+a turtle and a shark
+a shark and a seagull
+a seagull and a shark
+a shark and a fox
+a fox and a shark
+a shark and a penguin
+a penguin and a shark
+a shark and a dragonfly
+a dragonfly and a shark
+a shark and a jellyfish
+a jellyfish and a shark
+a shark and a parrot
+a parrot and a shark
+a shark and a wolf
+a wolf and a shark
+a shark and a chameleon
+a chameleon and a shark
+a shark and a flamingo
+a flamingo and a shark
+a shark and an eagle
+an eagle and a shark
+a shark and a rabbit
+a rabbit and a shark
+a shark and a platypus
+a platypus and a shark
+a shark and a llama
+a llama and a shark
+a shark and a crocodile
+a crocodile and a shark
+a shark and an aligator
+an aligator and a shark
+a shark and a meerkat
+a meerkat and a shark
+a shark and a tardigrade
+a tardigrade and a shark
+a shark and an aardvark
+an aardvark and a shark
+a shark and a capybara
+a capybara and a shark
+a shark and a panda
+a panda and a shark
+a shark and an elephant
+an elephant and a shark
+a shark and an anteater
+an anteater and a shark
+a shark and a pangolin
+a pangolin and a shark
+a shark and a honeybadger
+a honeybadger and a shark
+a shark and a raccoon
+a raccoon and a shark
+a shark and a tiger
+a tiger and a shark
+a shark and a lion
+a lion and a shark
+a turtle and a seagull
+a seagull and a turtle
+a turtle and a fox
+a fox and a turtle
+a turtle and a penguin
+a penguin and a turtle
+a turtle and a dragonfly
+a dragonfly and a turtle
+a turtle and a jellyfish
+a jellyfish and a turtle
+a turtle and a parrot
+a parrot and a turtle
+a turtle and a wolf
+a wolf and a turtle
+a turtle and a chameleon
+a chameleon and a turtle
+a turtle and a flamingo
+a flamingo and a turtle
+a turtle and an eagle
+an eagle and a turtle
+a turtle and a rabbit
+a rabbit and a turtle
+a turtle and a platypus
+a platypus and a turtle
+a turtle and a llama
+a llama and a turtle
+a turtle and a crocodile
+a crocodile and a turtle
+a turtle and an aligator
+an aligator and a turtle
+a turtle and a meerkat
+a meerkat and a turtle
+a turtle and a tardigrade
+a tardigrade and a turtle
+a turtle and an aardvark
+an aardvark and a turtle
+a turtle and a capybara
+a capybara and a turtle
+a turtle and a panda
+a panda and a turtle
+a turtle and an elephant
+an elephant and a turtle
+a turtle and an anteater
+an anteater and a turtle
+a turtle and a pangolin
+a pangolin and a turtle
+a turtle and a honeybadger
+a honeybadger and a turtle
+a turtle and a raccoon
+a raccoon and a turtle
+a turtle and a tiger
+a tiger and a turtle
+a turtle and a lion
+a lion and a turtle
+a seagull and a fox
+a fox and a seagull
+a seagull and a penguin
+a penguin and a seagull
+a seagull and a dragonfly
+a dragonfly and a seagull
+a seagull and a jellyfish
+a jellyfish and a seagull
+a seagull and a parrot
+a parrot and a seagull
+a seagull and a wolf
+a wolf and a seagull
+a seagull and a chameleon
+a chameleon and a seagull
+a seagull and a flamingo
+a flamingo and a seagull
+a seagull and an eagle
+an eagle and a seagull
+a seagull and a rabbit
+a rabbit and a seagull
+a seagull and a platypus
+a platypus and a seagull
+a seagull and a llama
+a llama and a seagull
+a seagull and a crocodile
+a crocodile and a seagull
+a seagull and an aligator
+an aligator and a seagull
+a seagull and a meerkat
+a meerkat and a seagull
+a seagull and a tardigrade
+a tardigrade and a seagull
+a seagull and an aardvark
+an aardvark and a seagull
+a seagull and a capybara
+a capybara and a seagull
+a seagull and a panda
+a panda and a seagull
+a seagull and an elephant
+an elephant and a seagull
+a seagull and an anteater
+an anteater and a seagull
+a seagull and a pangolin
+a pangolin and a seagull
+a seagull and a honeybadger
+a honeybadger and a seagull
+a seagull and a raccoon
+a raccoon and a seagull
+a seagull and a tiger
+a tiger and a seagull
+a seagull and a lion
+a lion and a seagull
+a fox and a penguin
+a penguin and a fox
+a fox and a dragonfly
+a dragonfly and a fox
+a fox and a jellyfish
+a jellyfish and a fox
+a fox and a parrot
+a parrot and a fox
+a fox and a wolf
+a wolf and a fox
+a fox and a chameleon
+a chameleon and a fox
+a fox and a flamingo
+a flamingo and a fox
+a fox and an eagle
+an eagle and a fox
+a fox and a rabbit
+a rabbit and a fox
+a fox and a platypus
+a platypus and a fox
+a fox and a llama
+a llama and a fox
+a fox and a crocodile
+a crocodile and a fox
+a fox and an aligator
+an aligator and a fox
+a fox and a meerkat
+a meerkat and a fox
+a fox and a tardigrade
+a tardigrade and a fox
+a fox and an aardvark
+an aardvark and a fox
+a fox and a capybara
+a capybara and a fox
+a fox and a panda
+a panda and a fox
+a fox and an elephant
+an elephant and a fox
+a fox and an anteater
+an anteater and a fox
+a fox and a pangolin
+a pangolin and a fox
+a fox and a honeybadger
+a honeybadger and a fox
+a fox and a raccoon
+a raccoon and a fox
+a fox and a tiger
+a tiger and a fox
+a fox and a lion
+a lion and a fox
+a penguin and a dragonfly
+a dragonfly and a penguin
+a penguin and a jellyfish
+a jellyfish and a penguin
+a penguin and a parrot
+a parrot and a penguin
+a penguin and a wolf
+a wolf and a penguin
+a penguin and a chameleon
+a chameleon and a penguin
+a penguin and a flamingo
+a flamingo and a penguin
+a penguin and an eagle
+an eagle and a penguin
+a penguin and a rabbit
+a rabbit and a penguin
+a penguin and a platypus
+a platypus and a penguin
+a penguin and a llama
+a llama and a penguin
+a penguin and a crocodile
+a crocodile and a penguin
+a penguin and an aligator
+an aligator and a penguin
+a penguin and a meerkat
+a meerkat and a penguin
+a penguin and a tardigrade
+a tardigrade and a penguin
+a penguin and an aardvark
+an aardvark and a penguin
+a penguin and a capybara
+a capybara and a penguin
+a penguin and a panda
+a panda and a penguin
+a penguin and an elephant
+an elephant and a penguin
+a penguin and an anteater
+an anteater and a penguin
+a penguin and a pangolin
+a pangolin and a penguin
+a penguin and a honeybadger
+a honeybadger and a penguin
+a penguin and a raccoon
+a raccoon and a penguin
+a penguin and a tiger
+a tiger and a penguin
+a penguin and a lion
+a lion and a penguin
+a dragonfly and a jellyfish
+a jellyfish and a dragonfly
+a dragonfly and a parrot
+a parrot and a dragonfly
+a dragonfly and a wolf
+a wolf and a dragonfly
+a dragonfly and a chameleon
+a chameleon and a dragonfly
+a dragonfly and a flamingo
+a flamingo and a dragonfly
+a dragonfly and an eagle
+an eagle and a dragonfly
+a dragonfly and a rabbit
+a rabbit and a dragonfly
+a dragonfly and a platypus
+a platypus and a dragonfly
+a dragonfly and a llama
+a llama and a dragonfly
+a dragonfly and a crocodile
+a crocodile and a dragonfly
+a dragonfly and an aligator
+an aligator and a dragonfly
+a dragonfly and a meerkat
+a meerkat and a dragonfly
+a dragonfly and a tardigrade
+a tardigrade and a dragonfly
+a dragonfly and an aardvark
+an aardvark and a dragonfly
+a dragonfly and a capybara
+a capybara and a dragonfly
+a dragonfly and a panda
+a panda and a dragonfly
+a dragonfly and an elephant
+an elephant and a dragonfly
+a dragonfly and an anteater
+an anteater and a dragonfly
+a dragonfly and a pangolin
+a pangolin and a dragonfly
+a dragonfly and a honeybadger
+a honeybadger and a dragonfly
+a dragonfly and a raccoon
+a raccoon and a dragonfly
+a dragonfly and a tiger
+a tiger and a dragonfly
+a dragonfly and a lion
+a lion and a dragonfly
+a jellyfish and a parrot
+a parrot and a jellyfish
+a jellyfish and a wolf
+a wolf and a jellyfish
+a jellyfish and a chameleon
+a chameleon and a jellyfish
+a jellyfish and a flamingo
+a flamingo and a jellyfish
+a jellyfish and an eagle
+an eagle and a jellyfish
+a jellyfish and a rabbit
+a rabbit and a jellyfish
+a jellyfish and a platypus
+a platypus and a jellyfish
+a jellyfish and a llama
+a llama and a jellyfish
+a jellyfish and a crocodile
+a crocodile and a jellyfish
+a jellyfish and an aligator
+an aligator and a jellyfish
+a jellyfish and a meerkat
+a meerkat and a jellyfish
+a jellyfish and a tardigrade
+a tardigrade and a jellyfish
+a jellyfish and an aardvark
+an aardvark and a jellyfish
+a jellyfish and a capybara
+a capybara and a jellyfish
+a jellyfish and a panda
+a panda and a jellyfish
+a jellyfish and an elephant
+an elephant and a jellyfish
+a jellyfish and an anteater
+an anteater and a jellyfish
+a jellyfish and a pangolin
+a pangolin and a jellyfish
+a jellyfish and a honeybadger
+a honeybadger and a jellyfish
+a jellyfish and a raccoon
+a raccoon and a jellyfish
+a jellyfish and a tiger
+a tiger and a jellyfish
+a jellyfish and a lion
+a lion and a jellyfish
+a parrot and a wolf
+a wolf and a parrot
+a parrot and a chameleon
+a chameleon and a parrot
+a parrot and a flamingo
+a flamingo and a parrot
+a parrot and an eagle
+an eagle and a parrot
+a parrot and a rabbit
+a rabbit and a parrot
+a parrot and a platypus
+a platypus and a parrot
+a parrot and a llama
+a llama and a parrot
+a parrot and a crocodile
+a crocodile and a parrot
+a parrot and an aligator
+an aligator and a parrot
+a parrot and a meerkat
+a meerkat and a parrot
+a parrot and a tardigrade
+a tardigrade and a parrot
+a parrot and an aardvark
+an aardvark and a parrot
+a parrot and a capybara
+a capybara and a parrot
+a parrot and a panda
+a panda and a parrot
+a parrot and an elephant
+an elephant and a parrot
+a parrot and an anteater
+an anteater and a parrot
+a parrot and a pangolin
+a pangolin and a parrot
+a parrot and a honeybadger
+a honeybadger and a parrot
+a parrot and a raccoon
+a raccoon and a parrot
+a parrot and a tiger
+a tiger and a parrot
+a parrot and a lion
+a lion and a parrot
+a wolf and a chameleon
+a chameleon and a wolf
+a wolf and a flamingo
+a flamingo and a wolf
+a wolf and an eagle
+an eagle and a wolf
+a wolf and a rabbit
+a rabbit and a wolf
+a wolf and a platypus
+a platypus and a wolf
+a wolf and a llama
+a llama and a wolf
+a wolf and a crocodile
+a crocodile and a wolf
+a wolf and an aligator
+an aligator and a wolf
+a wolf and a meerkat
+a meerkat and a wolf
+a wolf and a tardigrade
+a tardigrade and a wolf
+a wolf and an aardvark
+an aardvark and a wolf
+a wolf and a capybara
+a capybara and a wolf
+a wolf and a panda
+a panda and a wolf
+a wolf and an elephant
+an elephant and a wolf
+a wolf and an anteater
+an anteater and a wolf
+a wolf and a pangolin
+a pangolin and a wolf
+a wolf and a honeybadger
+a honeybadger and a wolf
+a wolf and a raccoon
+a raccoon and a wolf
+a wolf and a tiger
+a tiger and a wolf
+a wolf and a lion
+a lion and a wolf
+a chameleon and a flamingo
+a flamingo and a chameleon
+a chameleon and an eagle
+an eagle and a chameleon
+a chameleon and a rabbit
+a rabbit and a chameleon
+a chameleon and a platypus
+a platypus and a chameleon
+a chameleon and a llama
+a llama and a chameleon
+a chameleon and a crocodile
+a crocodile and a chameleon
+a chameleon and an aligator
+an aligator and a chameleon
+a chameleon and a meerkat
+a meerkat and a chameleon
+a chameleon and a tardigrade
+a tardigrade and a chameleon
+a chameleon and an aardvark
+an aardvark and a chameleon
+a chameleon and a capybara
+a capybara and a chameleon
+a chameleon and a panda
+a panda and a chameleon
+a chameleon and an elephant
+an elephant and a chameleon
+a chameleon and an anteater
+an anteater and a chameleon
+a chameleon and a pangolin
+a pangolin and a chameleon
+a chameleon and a honeybadger
+a honeybadger and a chameleon
+a chameleon and a raccoon
+a raccoon and a chameleon
+a chameleon and a tiger
+a tiger and a chameleon
+a chameleon and a lion
+a lion and a chameleon
+a flamingo and an eagle
+an eagle and a flamingo
+a flamingo and a rabbit
+a rabbit and a flamingo
+a flamingo and a platypus
+a platypus and a flamingo
+a flamingo and a llama
+a llama and a flamingo
+a flamingo and a crocodile
+a crocodile and a flamingo
+a flamingo and an aligator
+an aligator and a flamingo
+a flamingo and a meerkat
+a meerkat and a flamingo
+a flamingo and a tardigrade
+a tardigrade and a flamingo
+a flamingo and an aardvark
+an aardvark and a flamingo
+a flamingo and a capybara
+a capybara and a flamingo
+a flamingo and a panda
+a panda and a flamingo
+a flamingo and an elephant
+an elephant and a flamingo
+a flamingo and an anteater
+an anteater and a flamingo
+a flamingo and a pangolin
+a pangolin and a flamingo
+a flamingo and a honeybadger
+a honeybadger and a flamingo
+a flamingo and a raccoon
+a raccoon and a flamingo
+a flamingo and a tiger
+a tiger and a flamingo
+a flamingo and a lion
+a lion and a flamingo
+an eagle and a rabbit
+a rabbit and an eagle
+an eagle and a platypus
+a platypus and an eagle
+an eagle and a llama
+a llama and an eagle
+an eagle and a crocodile
+a crocodile and an eagle
+an eagle and an aligator
+an aligator and an eagle
+an eagle and a meerkat
+a meerkat and an eagle
+an eagle and a tardigrade
+a tardigrade and an eagle
+an eagle and an aardvark
+an aardvark and an eagle
+an eagle and a capybara
+a capybara and an eagle
+an eagle and a panda
+a panda and an eagle
+an eagle and an elephant
+an elephant and an eagle
+an eagle and an anteater
+an anteater and an eagle
+an eagle and a pangolin
+a pangolin and an eagle
+an eagle and a honeybadger
+a honeybadger and an eagle
+an eagle and a raccoon
+a raccoon and an eagle
+an eagle and a tiger
+a tiger and an eagle
+an eagle and a lion
+a lion and an eagle
+a rabbit and a platypus
+a platypus and a rabbit
+a rabbit and a llama
+a llama and a rabbit
+a rabbit and a crocodile
+a crocodile and a rabbit
+a rabbit and an aligator
+an aligator and a rabbit
+a rabbit and a meerkat
+a meerkat and a rabbit
+a rabbit and a tardigrade
+a tardigrade and a rabbit
+a rabbit and an aardvark
+an aardvark and a rabbit
+a rabbit and a capybara
+a capybara and a rabbit
+a rabbit and a panda
+a panda and a rabbit
+a rabbit and an elephant
+an elephant and a rabbit
+a rabbit and an anteater
+an anteater and a rabbit
+a rabbit and a pangolin
+a pangolin and a rabbit
+a rabbit and a honeybadger
+a honeybadger and a rabbit
+a rabbit and a raccoon
+a raccoon and a rabbit
+a rabbit and a tiger
+a tiger and a rabbit
+a rabbit and a lion
+a lion and a rabbit
+a platypus and a llama
+a llama and a platypus
+a platypus and a crocodile
+a crocodile and a platypus
+a platypus and an aligator
+an aligator and a platypus
+a platypus and a meerkat
+a meerkat and a platypus
+a platypus and a tardigrade
+a tardigrade and a platypus
+a platypus and an aardvark
+an aardvark and a platypus
+a platypus and a capybara
+a capybara and a platypus
+a platypus and a panda
+a panda and a platypus
+a platypus and an elephant
+an elephant and a platypus
+a platypus and an anteater
+an anteater and a platypus
+a platypus and a pangolin
+a pangolin and a platypus
+a platypus and a honeybadger
+a honeybadger and a platypus
+a platypus and a raccoon
+a raccoon and a platypus
+a platypus and a tiger
+a tiger and a platypus
+a platypus and a lion
+a lion and a platypus
+a llama and a crocodile
+a crocodile and a llama
+a llama and an aligator
+an aligator and a llama
+a llama and a meerkat
+a meerkat and a llama
+a llama and a tardigrade
+a tardigrade and a llama
+a llama and an aardvark
+an aardvark and a llama
+a llama and a capybara
+a capybara and a llama
+a llama and a panda
+a panda and a llama
+a llama and an elephant
+an elephant and a llama
+a llama and an anteater
+an anteater and a llama
+a llama and a pangolin
+a pangolin and a llama
+a llama and a honeybadger
+a honeybadger and a llama
+a llama and a raccoon
+a raccoon and a llama
+a llama and a tiger
+a tiger and a llama
+a llama and a lion
+a lion and a llama
+a crocodile and an aligator
+an aligator and a crocodile
+a crocodile and a meerkat
+a meerkat and a crocodile
+a crocodile and a tardigrade
+a tardigrade and a crocodile
+a crocodile and an aardvark
+an aardvark and a crocodile
+a crocodile and a capybara
+a capybara and a crocodile
+a crocodile and a panda
+a panda and a crocodile
+a crocodile and an elephant
+an elephant and a crocodile
+a crocodile and an anteater
+an anteater and a crocodile
+a crocodile and a pangolin
+a pangolin and a crocodile
+a crocodile and a honeybadger
+a honeybadger and a crocodile
+a crocodile and a raccoon
+a raccoon and a crocodile
+a crocodile and a tiger
+a tiger and a crocodile
+a crocodile and a lion
+a lion and a crocodile
+an aligator and a meerkat
+a meerkat and an aligator
+an aligator and a tardigrade
+a tardigrade and an aligator
+an aligator and an aardvark
+an aardvark and an aligator
+an aligator and a capybara
+a capybara and an aligator
+an aligator and a panda
+a panda and an aligator
+an aligator and an elephant
+an elephant and an aligator
+an aligator and an anteater
+an anteater and an aligator
+an aligator and a pangolin
+a pangolin and an aligator
+an aligator and a honeybadger
+a honeybadger and an aligator
+an aligator and a raccoon
+a raccoon and an aligator
+an aligator and a tiger
+a tiger and an aligator
+an aligator and a lion
+a lion and an aligator
+a meerkat and a tardigrade
+a tardigrade and a meerkat
+a meerkat and an aardvark
+an aardvark and a meerkat
+a meerkat and a capybara
+a capybara and a meerkat
+a meerkat and a panda
+a panda and a meerkat
+a meerkat and an elephant
+an elephant and a meerkat
+a meerkat and an anteater
+an anteater and a meerkat
+a meerkat and a pangolin
+a pangolin and a meerkat
+a meerkat and a honeybadger
+a honeybadger and a meerkat
+a meerkat and a raccoon
+a raccoon and a meerkat
+a meerkat and a tiger
+a tiger and a meerkat
+a meerkat and a lion
+a lion and a meerkat
+a tardigrade and an aardvark
+an aardvark and a tardigrade
+a tardigrade and a capybara
+a capybara and a tardigrade
+a tardigrade and a panda
+a panda and a tardigrade
+a tardigrade and an elephant
+an elephant and a tardigrade
+a tardigrade and an anteater
+an anteater and a tardigrade
+a tardigrade and a pangolin
+a pangolin and a tardigrade
+a tardigrade and a honeybadger
+a honeybadger and a tardigrade
+a tardigrade and a raccoon
+a raccoon and a tardigrade
+a tardigrade and a tiger
+a tiger and a tardigrade
+a tardigrade and a lion
+a lion and a tardigrade
+an aardvark and a capybara
+a capybara and an aardvark
+an aardvark and a panda
+a panda and an aardvark
+an aardvark and an elephant
+an elephant and an aardvark
+an aardvark and an anteater
+an anteater and an aardvark
+an aardvark and a pangolin
+a pangolin and an aardvark
+an aardvark and a honeybadger
+a honeybadger and an aardvark
+an aardvark and a raccoon
+a raccoon and an aardvark
+an aardvark and a tiger
+a tiger and an aardvark
+an aardvark and a lion
+a lion and an aardvark
+a capybara and a panda
+a panda and a capybara
+a capybara and an elephant
+an elephant and a capybara
+a capybara and an anteater
+an anteater and a capybara
+a capybara and a pangolin
+a pangolin and a capybara
+a capybara and a honeybadger
+a honeybadger and a capybara
+a capybara and a raccoon
+a raccoon and a capybara
+a capybara and a tiger
+a tiger and a capybara
+a capybara and a lion
+a lion and a capybara
+a panda and an elephant
+an elephant and a panda
+a panda and an anteater
+an anteater and a panda
+a panda and a pangolin
+a pangolin and a panda
+a panda and a honeybadger
+a honeybadger and a panda
+a panda and a raccoon
+a raccoon and a panda
+a panda and a tiger
+a tiger and a panda
+a panda and a lion
+a lion and a panda
+an elephant and an anteater
+an anteater and an elephant
+an elephant and a pangolin
+a pangolin and an elephant
+an elephant and a honeybadger
+a honeybadger and an elephant
+an elephant and a raccoon
+a raccoon and an elephant
+an elephant and a tiger
+a tiger and an elephant
+an elephant and a lion
+a lion and an elephant
+an anteater and a pangolin
+a pangolin and an anteater
+an anteater and a honeybadger
+a honeybadger and an anteater
+an anteater and a raccoon
+a raccoon and an anteater
+an anteater and a tiger
+a tiger and an anteater
+an anteater and a lion
+a lion and an anteater
+a pangolin and a honeybadger
+a honeybadger and a pangolin
+a pangolin and a raccoon
+a raccoon and a pangolin
+a pangolin and a tiger
+a tiger and a pangolin
+a pangolin and a lion
+a lion and a pangolin
+a honeybadger and a raccoon
+a raccoon and a honeybadger
+a honeybadger and a tiger
+a tiger and a honeybadger
+a honeybadger and a lion
+a lion and a honeybadger
+a raccoon and a tiger
+a tiger and a raccoon
+a raccoon and a lion
+a lion and a raccoon
+a tiger and a lion
+a lion and a tiger
