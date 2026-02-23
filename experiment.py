@@ -278,10 +278,10 @@ for input_path in input_paths:
             eval_probs = get_continuation_probabilities(prompt_eval, gen_token_ids)
 
             # 3) Write TSV – header row for this zadání
-            writer.writerow([model_name, template1, template2, zadani])
+            writer.writerow([model_name, template1.replace("\n", "\\n"), template2.replace("\n", "\\n"), zadani])
             # 4) Write per-token rows: token_string, token_id, prob1, prob2
             for tok_str, tok_id, p1, p2 in zip(gen_tokens, gen_token_ids, gen_probs, eval_probs):
-                writer.writerow([tok_str, tok_id, f"{p1:.8f}", f"{p2:.8f}"])
+                writer.writerow([tok_str.replace("\n", "\\n"), tok_id, f"{p1:.8f}", f"{p2:.8f}"])
             outputs_done += 1
 
     print(f"Results written to {output_path}", file=sys.stderr)
