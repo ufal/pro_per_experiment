@@ -1,0 +1,7 @@
+.vscode
+.claude
+*.err
+*.out
+*.pdf
+*.ipynb
+outputs
