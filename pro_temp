@@ -1,0 +1,4 @@
+User: Please write a poem about {var}.\n\nAssistant: Here is the poem for you:\n\n
+User: I would like you to write a poem about {var}.\n\nAssistant: Here is the poem for you:\n\n
+User: Hi, my kid wants to listen to a poem about {var}, would you be so kind and create one?\n\nAssistant: Of course, here is the poem for you:\n\n
+User: I really love poetry but I have never seen a poem about {var}, compose one, please.\n\nAssistant: As you wish, here is the poem for you:\n\n

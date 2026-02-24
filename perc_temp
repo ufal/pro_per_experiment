@@ -1,0 +1,3 @@
+User: Here is a poem about {var}, please rate the poem.\n\n
+User: I would like to hear your opinion on this poem about {var}:\n\n
+User: I have read a poem about {var} and I would like to know what you think about it. Here is the poem:\n\n

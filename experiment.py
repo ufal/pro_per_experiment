@@ -8,47 +8,52 @@ import torch.nn.functional as F
 from tqdm import tqdm
 
 
-def read_datafile(path):
-    """
-    Read a datafile with the following format:
-      Line 1: model_name
-      Line 2: template1 (may contain '{var}' and literal '\\n' for newlines)
-      Line 3: template2
-      Remaining lines: one zadani per line
-    Returns (model_name, template1, template2, list of zadani strings).
-    """
+def read_lines(path):
+    """Read a file and return a list of non-empty stripped lines."""
     with open(path, encoding="utf-8") as f:
-        model_name = f.readline().strip()
-        template1 = f.readline().strip().replace("\\n", "\n")
-        template2 = f.readline().strip().replace("\\n", "\n")
-        data = []
-        for line in f:
-            line = line.strip()
-            if line:
-                data.append(line)
-    return model_name, template1, template2, data
+        return [line.strip() for line in f if line.strip()]
 
 
-# ── Read datafile(s) ───────────────────────────────────────────────────────────
+# ── Parse arguments & read input files ────────────────────────────────────────
 import argparse
 
 parser = argparse.ArgumentParser(description="Run generation + evaluation experiment.")
-parser.add_argument("inputs", nargs="+", metavar="datafile.tsv",
-                    help="One or more input datafiles.")
+parser.add_argument("--llm", type=int, required=True,
+                    help="0-based index of the LLM to use (from 'llms' file).")
+parser.add_argument("--mode", choices=["pro-pro", "pro-perc"], required=True,
+                    help="'pro-pro': eval template from pro_temp; 'pro-perc': from perc_temp.")
+parser.add_argument("--pro-template", type=int, required=True,
+                    help="0-based index of the production template (from 'pro_temp').")
+parser.add_argument("--eval-template", type=int, required=True,
+                    help="0-based index of the evaluation template.")
 parser.add_argument("--max-tokens", type=int, default=100,
                     help="Maximum number of tokens to generate (default: 100).")
 parser.add_argument("--output", "-o", type=str, default=None,
-                    help="Output filename. If omitted, derived from input as <input>_output.tsv. "
-                         "Only valid when a single input file is given.")
+                    help="Output filename. If omitted, auto-derived from run parameters.")
 parser.add_argument("--max-outputs", type=int, default=None,
-                    help="Stop after generating this many outputs (across all input files).")
+                    help="Stop after generating this many outputs.")
 args = parser.parse_args()
 
-if args.output and len(args.inputs) > 1:
-    print("Error: --output can only be used with a single input file.", file=sys.stderr)
-    sys.exit(1)
+llms        = read_lines("llms")
+pro_temps   = [t.replace("\\n", "\n") for t in read_lines("pro_temp")]
+perc_temps  = [t.replace("\\n", "\n") for t in read_lines("perc_temp")]
+vars_list   = read_lines("vars")
 
-input_paths = args.inputs
+def _check_index(value, lst, name):
+    if value < 0 or value >= len(lst):
+        print(f"Error: --{name} {value} is out of range (0–{len(lst)-1}).", file=sys.stderr)
+        sys.exit(1)
+
+_check_index(args.llm,          llms,       "llm")
+_check_index(args.pro_template, pro_temps,  "pro-template")
+if args.mode == "pro-pro":
+    _check_index(args.eval_template, pro_temps,  "eval-template")
+else:
+    _check_index(args.eval_template, perc_temps, "eval-template")
+
+model_name = llms[args.llm]
+template1  = pro_temps[args.pro_template]
+template2  = (pro_temps if args.mode == "pro-pro" else perc_temps)[args.eval_template]
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 current_model_name = None
@@ -244,48 +249,43 @@ def get_continuation_probabilities(prompt_text, continuation_token_ids):
 
 
 # ── Main loop & TSV output ─────────────────────────────────────────────────────
+if args.output:
+    output_path = args.output
+else:
+    output_path = f"llm{args.llm}_{args.mode}_pro{args.pro_template}_eval{args.eval_template}.tsv"
+
+load_model(model_name)
+
+print(f"\nOutput → {output_path}", file=sys.stderr)
+
 outputs_done = 0
-for input_path in input_paths:
-    model_name, template1, template2, data_file = read_datafile(input_path)
-    if args.output:
-        output_path = args.output
-    else:
-        output_path = os.path.splitext(input_path)[0] + "_output.tsv"
+with open(output_path, "w", newline="", encoding="utf-8") as out_f:
+    writer = csv.writer(out_f, delimiter="\t")
 
-    load_model(model_name)
+    for zadani in tqdm(vars_list, desc="Tasks", file=sys.stderr):
+        if args.max_outputs is not None and outputs_done >= args.max_outputs:
+            break
+        prompt_gen = template1.replace("{var}", zadani)
+        prompt_eval = template2.replace("{var}", zadani)
 
-    print(f"\nProcessing {input_path} → {output_path}", file=sys.stderr)
+        # 1) Generate tokens with template 1 → prob1
+        result_gen = generate_with_sampling(prompt_gen, max_new_tokens=args.max_tokens)
+        gen_token_ids = result_gen["generated_token_ids"]
+        gen_tokens = result_gen["tokens"]
+        gen_probs = result_gen["probabilities"]
 
-    with open(output_path, "w", newline="", encoding="utf-8") as out_f:
-        writer = csv.writer(out_f, delimiter="\t")
+        # Log generated output to stderr
+        print(f"Generated: {result_gen['response']}", file=sys.stderr)
 
-        for zadani in tqdm(data_file, desc=f"Tasks ({os.path.basename(input_path)})", file=sys.stderr):
-            if args.max_outputs is not None and outputs_done >= args.max_outputs:
-                break
-            prompt_gen = template1.replace("{var}", zadani)
-            prompt_eval = template2.replace("{var}", zadani)
+        # 2) Evaluate the same tokens under template 2 → prob2
+        eval_probs = get_continuation_probabilities(prompt_eval, gen_token_ids)
 
-            # 1) Generate tokens with template 1 → prob1
-            result_gen = generate_with_sampling(prompt_gen, max_new_tokens=args.max_tokens)
-            gen_token_ids = result_gen["generated_token_ids"]
-            gen_tokens = result_gen["tokens"]
-            gen_probs = result_gen["probabilities"]
+        # 3) Write TSV – header row for this zadání
+        writer.writerow([model_name, template1.replace("\n", "\\n"), template2.replace("\n", "\\n"), zadani])
+        # 4) Write per-token rows: token_string, token_id, prob1, prob2
+        for tok_str, tok_id, p1, p2 in zip(gen_tokens, gen_token_ids, gen_probs, eval_probs):
+            writer.writerow([tok_str.replace("\n", "\\n"), tok_id, f"{p1:.8f}", f"{p2:.8f}"])
+        outputs_done += 1
 
-            # Log generated output to stderr
-            print(f"Generated: {result_gen['response']}", file=sys.stderr)
-
-            # 2) Evaluate the same tokens under template 2 → prob2
-            eval_probs = get_continuation_probabilities(prompt_eval, gen_token_ids)
-
-            # 3) Write TSV – header row for this zadání
-            writer.writerow([model_name, template1.replace("\n", "\\n"), template2.replace("\n", "\\n"), zadani])
-            # 4) Write per-token rows: token_string, token_id, prob1, prob2
-            for tok_str, tok_id, p1, p2 in zip(gen_tokens, gen_token_ids, gen_probs, eval_probs):
-                writer.writerow([tok_str.replace("\n", "\\n"), tok_id, f"{p1:.8f}", f"{p2:.8f}"])
-            outputs_done += 1
-
-    print(f"Results written to {output_path}", file=sys.stderr)
-    if args.max_outputs is not None and outputs_done >= args.max_outputs:
-        break
-
-print("\nAll done.", file=sys.stderr)
+print(f"\nResults written to {output_path}", file=sys.stderr)
+print("All done.", file=sys.stderr)

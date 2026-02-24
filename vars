@@ -1,6 +1,3 @@
-meta-llama/Llama-3.1-8B
-User: Please write a poem about {var}.\n\nAssistant: Here is the poem for you:\n\n
-User: Here is a poem about {var}, please rate the poem.\n\n
 a hedgehog
 an octopus
 a whale
